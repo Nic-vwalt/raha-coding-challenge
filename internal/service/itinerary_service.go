@@ -15,7 +15,7 @@ func NewItineraryService(ctx context.Context) (*ItineraryService, error) {
     return &ItineraryService{}, nil
 }
 
-func (is *ItineraryService) TransformItinerary(ctx context.Context, tickets [][]string) ([]string, error) {
+func (is *ItineraryService) ReconstructItinerary(ctx context.Context, tickets [][]string) ([]string, error) {
 	if len(tickets) == 0 {
 		return nil, fmt.Errorf("no itineraries provided")
 	}

@@ -20,6 +20,6 @@ func AddRoutes(e *echo.Echo, registry *ServiceRegistry) {
     // Itinerary routes nested under the base path
     itinGroup := baseGroup.Group("/itinerary")
     {   
-        itinGroup.POST("/transform", itinHandler.TransformItinerary)
+        itinGroup.POST("/transform", itinHandler.ReconstructItinerary)
     }
 }
