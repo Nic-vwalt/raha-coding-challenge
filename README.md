@@ -10,6 +10,14 @@ To run the application, execute the following command in the terminal:
 go run cmd/debug/main.go
 ```
 
+## POST Endpoint
+
+The POST endpoint setup to handle your JSON input.
+
+```bash
+localhost:4000/itinerary/transform
+```
+
 ## Solution
 
 The solution to this itinerary problem is:
