@@ -15,7 +15,7 @@ go run cmd/debug/main.go
 The POST endpoint setup to handle your JSON input.
 
 ```bash
-localhost:4000/itinerary/transform
+localhost:4000/itinerary/reconstruct
 ```
 
 ## Solution
