@@ -47,6 +47,8 @@ func (is *ItineraryService) ReconstructItinerary(ctx context.Context, tickets []
 			graph[current] = graph[current][1:]
 			dfs(next)
 		}
+
+		// Reverse itinerary to get the correct order
 		itinerary = append([]string{current}, itinerary...)
 	}
 

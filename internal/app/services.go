@@ -7,7 +7,6 @@ import (
 	"github.com/Nic-vwalt/raha-coding-challenge/internal/service"
 )
 
-// AddServices initializes all the services required by the application and returns a ServiceRegistry.
 func AddServices(ctx context.Context) (*ServiceRegistry, error) {
     itineraryService, err := service.NewItineraryService(ctx)
     if err != nil {

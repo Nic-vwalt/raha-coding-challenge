@@ -17,7 +17,7 @@ func NewItinHandler(itineraryService *service.ItineraryService) *ItineraryHandle
     }
 }
 
-// TransformItinerary is an Echo handler that reads a request, processes it, and returns a JSON response.
+// ReconstructItinerary
 func (h *ItineraryHandler) ReconstructItinerary(c echo.Context) error {
     var routePairs [][]string
     if err := c.Bind(&routePairs); err != nil {

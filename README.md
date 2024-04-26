@@ -1,6 +1,6 @@
 # Raha Coding Challenge
 
-This repository contains the solution to a coding challenge involving the construction of an itinerary from a list of flights. The solution utilizes a graph representation of the flights and performs a Depth-First Search (DFS) to establish the itinerary sequence. Unlike the original problem which always starts from JFK, this implementation allows for a dynamic starting point.
+This repository contains the solution to a coding challenge - Reconstruct Itinerary.
 
 ## Run Command
 
@@ -12,9 +12,11 @@ go run cmd/debug/main.go
 
 ## Solution
 
-The solution to this itinerary problem is to:
+The solution to this itinerary problem is:
 
-- initialize a graph that represents the flights
-- DFS (Depth-First Search) function which in the original leet code question always starts at JFK, but I've altered my solution to be dynamic as a starting airport was not specified. Inside this function we loop until we find an airport that has no more destinations.
+- A graph is created as a map where each key is a source and the value is a slice of destinations. The original leet code question always starts at JFK, but I've altered my solution to be dynamic as a starting airport was not specified.
+- For each ticket, the source and destination are added to the graph.
+- The destinations for each source in the graph is sorted in lexicographical order.
+- A Depth-First Search (DFS) is performed starting from the determined or default start point.
 - Once we reach an airport with no outgoing edges/destinations we start backtracking. Starting with the current airport, building the rest of the itinerary in reverse.
 - Finally reverse the current list because we have been building from end to start.
