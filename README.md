@@ -28,3 +28,7 @@ The solution to this itinerary problem is:
 - A Depth-First Search (DFS) is performed starting from the determined or default start point.
 - Once we reach an airport with no outgoing edges/destinations we start backtracking. Starting with the current airport, building the rest of the itinerary in reverse.
 - Finally reverse the current list because we have been building from end to start.
+
+## Edit
+
+Please see the added StackSliceReconstructItinerary function in the 'itenerary_handler.go' that improved speed and memory efficiency, but might not scale as well.
