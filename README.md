@@ -31,4 +31,4 @@ The solution to this itinerary problem is:
 
 ## Edit
 
-Please see the added StackSliceReconstructItinerary function in the 'itenerary_handler.go' that improves speed and memory efficiency, but might not scale as well.
+Please see the added StackSliceReconstructItinerary function in the 'itenerary_service.go' that improves speed and memory efficiency, but might not scale as well.
